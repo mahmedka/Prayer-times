@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "qatar";
+  src: url(../font/Qatar2022Arabic-Bold.woff2);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #f3ecdb;
+  font-family: "qatar",sans-serif;
+}
+
+body{
+  background-color: #3e503c;
+}
+
+.container{
+  width: min(1100px,100%);
+  padding: 30px 50px;
+  margin: auto;
+}
+h1{
+  font-size: 60px;
+}
+.container .date p{
+  margin-top: 20px;
+  font-size: 25px;
+}
+.city{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+select{
+  background-color: #7f886a;
+  height: 30px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.row{
+  margin-top: 50px;
+  display: grid;
+  padding: 20px 0;
+  grid-template-columns: repeat(6,1fr);
+  gap: 5px;
+  text-align: center;
+}
+
+.card h4{
+  width: 100%;
+  background-color: #ff6f3d;
+  padding: 5px 0;
+  font-size: 23px;
+}
+.card-body{
+  height: 140px;
+  display: grid;
+  place-items: center;
+  background-color: #7f886a;
+}
+.card-body p {
+  font-size: 40px;
+}
+/* phone */
+@media only screen and (max-width: 600px) {
+  .container{
+    padding: 40px 20px;
+  }
+  select{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    padding: 0  ;
+    font-size: 10px;
+  }
+  select option{
+    width: 80px;
+    padding: 0;
+    font-size: 10px;
+  }
+  h1{
+    font-size: 30px;
+  } 
+  .container .date p{
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .row{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .card{
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+    background-color: #7f886a;
+    align-items: center;
+  }
+  .card h4{
+    width: 120px;
+    padding: 5px 0;
+    font-size: 18px;
+  }
+  .card-body{
+    height: 100%;
+    width: 100%;
+  }
+  .card-body p {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+
+}
+/* tablet */
+@media only screen and (min-width: 992px) {
+
+  .row{
+  margin-top: 50px;
+  gap: 20px;
+
+}
+}
